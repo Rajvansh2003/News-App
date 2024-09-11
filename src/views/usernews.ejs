@@ -1,0 +1,131 @@
+<header>
+  <div class="logo text-center">
+    <a href="/" style="text-decoration: none;"><h2 style="font-size: 40px;padding: 10px;color: rgba(255, 0, 0, 0.82);"><b>ACONEWS</b></h2></a>
+  </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item">
+            <a class="nav-link " style="color: rgb(255, 255, 255);" href="/news/breaking-news">Breaking News</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(255, 255, 255);" href="/news/sports">Sports</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(255, 255, 255);"href="/news/entertainment">Entertainment</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(255, 255, 255);"href="/news/technology">Technology</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"style="color: rgb(255, 255, 255);" href="/news/science">Science</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(255, 255, 255);"href="/news/health">Health</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(255, 255, 255);"href="/news/nation">Nation</a>
+            
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link"style="color: rgb(255, 255, 255);" href="/news/world">World</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" style="color: rgb(255, 255, 255);"href="/news/business">Business</a>
+          </li>
+
+        <li class="nav-item">
+          <div class="user-icon">
+          <a class="nav-link" href="/user"> <i class="fas fa-user" style="color: #fff;"></i></a>
+        </div>
+        </li>
+        </ul>
+       
+        <form class="form-inline my-2 my-lg-0" method="POST" action="/news/search">
+          <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search" style="width: 120px;">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    </header>
+<div class="wrapper">
+    <div class="news">
+        <% if(news != null){ %>
+
+           <% news.articles.forEach(function(articles,index){ %>
+            <a href="<%- articles.url %>" style="text-decoration: none;"> 
+            <div class="news_card">
+                   <img src="<%- articles.image %>">
+              <h2><%- articles.title %></h2>
+              <p><%- articles.description %></p>
+            </div>
+          </a>
+               <% }) %>
+  <% } else { %>
+   No posts found
+   <% } %>
+    </div>
+</div>
+
+<hr class="hr-text" data-content="Interesting Facts">
+
+
+<div class="center">
+ <div class="wrapper">
+  <div class="news">
+    <div class="news_card">
+      <img src="<%- facts.img %>">
+      <h2><%- facts.title %></h2>
+      <p><%- facts.description %></p>
+    </div>
+  </div>
+ </div>
+</div>
+<style>
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+}
+.hr-text:before {
+  content: '';
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#818078), to(transparent));
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 .5em;
+  line-height: 1.5em;
+  color: #818078;
+  background-color: #fcfcfa;
+}
+
+</style>
+
+
