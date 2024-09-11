@@ -9,7 +9,7 @@ This project is a news application that allows users to search and view the late
 ## Project Setup
 To run this project on your local machine, follow these steps:
 
-1. Clone the repository using `git clone https://github.com/vishnusatheeshpulickal/News-App.git`
+1. Clone the repository using `git clone https://github.com/Rajvansh2003/News-App.git`
 2. Navigate to the project directory using `cd News-App`
 3. Install dependencies using `npm install`
 4. Create a `.env` file in the root directory and add your GNews `API key as APIKEY=<your-api-key>`
