@@ -21,12 +21,11 @@ To run this project on your local machine, follow these steps:
 * News articles can be filtered by category.
 * Users can view the latest news articles on the home page.
 
-## Usage
-To use the application, follow these steps:
-* Open the application in your browser.
-* Search for a news article using keywords.
-* The search results will be displayed in a grid layout.
-* Click on a news article to view the full article.
+## Challenges
+* Registration Delays: Issues with verifying or receiving the API key.
+* Documentation Confusion: Difficulty understanding API parameters and limits.
+* Testing Errors: Problems with Postman or request failures.
+* Key Security: Protecting the API key from exposure.
 
 
 ## Technologies Used
