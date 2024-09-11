@@ -41,4 +41,4 @@ To use the application, follow these steps:
 
 ## Support
 
-If you have any questions or comments about this project, feel free to reach out to me via email at [vishnu satheesh](mailto:vishnusatheeshdev@gmail.com).
+If you have any questions or comments about this project, feel free to reach out to me via email at [Rajvansh Sharma](mailto:rajvanshsharma.666@gmail.com).
